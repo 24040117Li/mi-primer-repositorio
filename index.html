@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>body{font-family}</style>
+  <title>Blog Sencillo</title>
+</head>
+  <body style="margin:0; padding:0; box-sizing:border-box;">
+    <style>
+      body { font-family: Arial, sans-serif; }
+      /* Barra redes sociales */
+      #social-bar {
+        background: #111;
+        height: 1cm;
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+      }
+      #main-content {
+        margin-bottom: 1.2cm;
+      }
+    </style>
+    <div id="main-content">
+  <h1>Jocelyn Liliana De La O Moreno <img src="imagenes/perfil.png" style="width: 50px; height: auto;"</h1> 
+
+  <h2>Publicaciones recientes</h2>
+  <div>
+    <div style="background: #111; height: 2cm; width: 100%; display: flex; align-items: center; justify-content: center;">
+      <span style="color: #fff; font-size: 1.5em; text-align: center;">les mostraré un poco de mis gustos ¡Bienvenidos!</span>
+    </div>
+  </div>
+  <div>
+    
+
+    <center>
+
+    
+    <h3>Sobre Mi</h3>
+    <p>"Un rincón para compartir mis pensamientos, un espacio para conectar contigo"</p>
+    <h3>Lo Que Me Gusta Hacer</h3>
+    <p>acariciar a los gatos,bailar el kpop y dibujar personajes.</p>
+    <div style="display: flex; justify-content: space-between max-width: 900px;">
+
+    <div style="display: flex; justify-content: center; max-width: 900px; margin: auto;">
+    <img src="imagenes/KPOP.jpg" style="width: 20%;">
+    <img src="imagenes/GATOS.jpg" style="width: 20%;">
+    <img src="imagenes/imagen2.png" style="width: 20%;">
+    <img src="imagenes/DIBUJO.jpg" style="width: 20%;">
+    </div>
+    </center>
+    </div>
+
+  
+
+  <!-- Botón para abrir el formulario -->
+  <div style="position: absolute; top: 20px; right: 30px;">
+    <button onclick="document.getElementById('modalForm').style.display='block'" style="padding: 10px 20px; font-size: 1em; background: #111; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Enviar mensaje</button>
+  </div>
+
+  <!-- Modal del formulario -->
+  <div id="modalForm" style="display:none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); z-index: 999;">
+    <div style="background: #fff; width: 350px; margin: 60px auto; padding: 30px; border-radius: 10px; position: relative;">
+      <span onclick="document.getElementById('modalForm').style.display='none'" style="position: absolute; top: 10px; right: 15px; font-size: 1.5em; cursor: pointer;">&times;</span>
+      <h2 style="text-align:center;">Contacto</h2>
+      <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required style="width:100%; margin-bottom:10px;"><br>
+        <label>Correo:</label>
+        <input type="email" name="email" required style="width:100%; margin-bottom:10px;"><br>
+        <label>Mensaje:</label>
+        <textarea name="mensaje" required style="width:100%; margin-bottom:10px;"></textarea><br>
+        <button type="submit" style="background:#111; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; width:100%;">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+
+  <!-- Barra inferior con redes sociales -->
+  <div id="social-bar">
+    <span style="color: #fff; margin: 0 15px; display: flex; align-items: center;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" style="width:24px; height:24px; margin-right:8px; filter: invert(1);"> Facebook
+    </span>
+    <span style="color: #fff; margin: 0 15px; display: flex; align-items: center;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" style="width:24px; height:24px; margin-right:8px; filter: invert(1);"> Instagram
+    </span>
+    <span style="color: #fff; margin: 0 15px; display: flex; align-items: center;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" style="width:24px; height:24px; margin-right:8px; filter: invert(1);"> WhatsApp
+    </span>
+    <span style="color: #fff; margin: 0 15px; display: flex; align-items: center;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" style="width:24px; height:24px; margin-right:8px; filter: invert(1);"> X
+    </span>
+    <span style="color: #fff; margin: 0 15px; display: flex; align-items: center;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/threads.svg" style="width:24px; height:24px; margin-right:8px; filter: invert(1);"> Threads
+    </span>
+  </div>
+
+</body>
+</html>
